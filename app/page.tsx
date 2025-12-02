@@ -21,8 +21,14 @@ import {
    TYPES & INTERFACES
    ============================================================================= */
 
+
 interface NavLink {
   name: string;
+  href: string;
+}
+
+interface SocialLink {
+  Icon: React.ElementType;
   href: string;
 }
 
@@ -115,12 +121,40 @@ const SCHOOL_PROJECTS: Project[] = [
     link: "https://cpu-scheduling-fcfs-dusky.vercel.app/",
     icon: <BookOpen />
   },
-  
+  {
+    title: "Random fox image",
+    description: "A candid wildlife photograph shows a red fox with bushy, rusty-orange fur and a white chest pausing on a moss-covered log in a sun-dappled forest. Its ears are pricked, and it looks alertly towards the left of the frame",
+    tags: ["Html", "CSS", "Javascript"],
+    link: "https://random-fox-image.vercel.app/",
+    icon: <BookOpen />
+  },
+  {
+    title: "E commerce",
+    description: "A candid wildlife photograph shows a red fox with bushy, rusty-orange fur and a white chest pausing on a moss-covered log in a sun-dappled forest. Its ears are pricked, and it looks alertly towards the left of the frame",
+    tags: ["React", "CSS", "Javascript"],
+    link: "https://appsdevs.vercel.app/",
+    icon: <BookOpen />
+  },  
 ];
 
 const SKILLS: string[] = [
   "JavaScript (ES6+)", "React.js", "TypeScript", "Tailwind CSS", 
   "Node.js", "PostgreSQL", "Git", "UI/UX Design"
+];
+
+const socialLinks: SocialLink[] = [
+  { 
+    Icon: Github, 
+    href: "https://github.com/johnlee-jumao-as" 
+  },
+  { 
+    Icon: Linkedin, 
+    href: "https://www.linkedin.com/in/johnlee-jumao-as/" 
+  },
+  { 
+    Icon: Terminal, 
+    href: "/projects" 
+  }
 ];
 
 
