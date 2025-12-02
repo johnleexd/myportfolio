@@ -85,56 +85,44 @@ const NAV_LINKS: NavLink[] = [
 
 const FEATURED_PROJECTS: Project[] = [
   {
-    title: "E-Commerce Dashboard",
-    description: "A comprehensive analytics dashboard for online retailers. Features real-time data visualization and inventory management.",
+    title: "",
+    description: "",
     tags: ["React", "Tailwind", "Node.js"],
     link: "#",
     icon: <Globe />
   },
   {
-    title: "AI Task Manager",
-    description: "Smart productivity application that uses NLP to categorize and prioritize daily tasks automatically.",
-    tags: ["TypeScript", "OpenAI", "Firebase"],
+    title: "",
+    description: "",
+    tags: ["React", "Tailwind", "Node.js"],
     link: "#",
-    icon: <Cpu />
+    icon: <Globe />
   },
   {
-    title: "Crypto Tracker",
-    description: "Real-time cryptocurrency tracking application with price alerts and portfolio performance charts.",
-    tags: ["Vue.js", "D3.js", "Express"],
+    title: "",
+    description: "",
+    tags: ["React", "Tailwind", "Node.js"],
     link: "#",
-    icon: <Terminal />
-  }
+    icon: <Globe />
+  },
 ];
 
 const SCHOOL_PROJECTS: Project[] = [
   {
-    title: "Library Management System",
-    description: "A Java-based desktop application for managing book rentals, returns, and student records using MySQL.",
-    tags: ["Java", "MySQL", "Swing"],
-    link: "#",
+    title: "CPU Scheduling FCFS",
+    description: "First-Come, First-Served (FCFS) is the simplest and most intuitive CPU scheduling algorithm used in operating systems. As the name suggests, the process that requests the CPU first is allocated the CPU first.",
+    tags: ["Nextjs", "Tailwind", "TypeScript"],
+    link: "https://cpu-scheduling-fcfs-dusky.vercel.app/",
     icon: <BookOpen />
   },
-  {
-    title: "Student Grading Portal",
-    description: "Web portal allowing professors to input grades and students to view transcripts securely.",
-    tags: ["PHP", "HTML/CSS", "SQL"],
-    link: "#",
-    icon: <GraduationCap />
-  },
-  {
-    title: "Physics Simulator",
-    description: "Interactive simulation of projectile motion and elastic collisions built for the Physics department.",
-    tags: ["Python", "PyGame", "Math"],
-    link: "#",
-    icon: <Code />
-  }
+  
 ];
 
 const SKILLS: string[] = [
   "JavaScript (ES6+)", "React.js", "TypeScript", "Tailwind CSS", 
   "Node.js", "PostgreSQL", "Git", "UI/UX Design"
 ];
+
 
 /* =============================================================================
    MONOCHROME THEME CONSTANTS
@@ -375,7 +363,7 @@ const ProjectGrid: React.FC<ProjectGridProps> = ({ projects }) => (
                 className: `w-8 h-8` 
               }) : null}
             </div>
-            <a href={project.link} className={`${THEME.colors.textMuted} hover:text-white transition-colors hover:scale-110`}>
+            <a href={project.link} className={`${THEME.colors.textMuted} hover:text-white transition-colors hover:scale-110`} target='_blank'>
               <ExternalLink size={24} />
             </a>
           </div>
@@ -452,7 +440,7 @@ const Contact: React.FC = () => {
           </p>
           
           <a 
-            href="mailto:email@example.com"
+            href="mailto:johnlyyjazzman@gmail.com"
             className={`inline-flex items-center gap-3 px-10 py-5 text-lg font-bold transition-all bg-white hover:bg-neutral-200 text-black font-mono rounded-none hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(255,255,255,0.1)] hover:shadow-[0_0_30px_rgba(255,255,255,0.3)]`}
           >
             <Mail /> Send Transmission
@@ -462,7 +450,7 @@ const Contact: React.FC = () => {
             {[Github, Linkedin, Terminal].map((Icon, i) => (
               <a 
                 key={i} 
-                href="#" 
+                href="https://github.com/johnleexd" 
                 className="text-neutral-600 hover:text-white hover:-translate-y-2 hover:scale-110 transition-all duration-300"
               >
                 <Icon size={32} />
